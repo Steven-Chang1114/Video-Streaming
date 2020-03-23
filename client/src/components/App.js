@@ -1,5 +1,5 @@
 import React from "react"
-import {BrowserRouter, Route} from "react-router-dom"
+import {BrowserRouter, HashRouter , Route, Link} from "react-router-dom"
 
 const App = () => {
     return(
