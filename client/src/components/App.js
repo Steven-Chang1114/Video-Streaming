@@ -7,8 +7,6 @@ import StreamList from "./streams/StreamList"
 import StreamShow from "./streams/StreamShow"
 import Header from "./Header"
 
-
-//441466345330-aqr7a8e8lkk0le36ot0dhaevoqvunf3a.apps.googleusercontent.com
 const App = () => {
     return(
         <div className = "ui container">
