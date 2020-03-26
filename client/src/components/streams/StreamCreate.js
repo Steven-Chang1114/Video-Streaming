@@ -1,11 +1,16 @@
 import React from "react"
+import {Field, reduxForm} from "redux-form"
 
-const StreanCreate = () => {
-    return(
-        <div>
-            create
-        </div>
-    )
+class StreanCreate extends React.Component {
+    render(){
+        return(
+            <form>
+                <Field />
+            </form>
+        )
+    }
 }
 
-export default StreanCreate
+export default reduxForm({
+    form: 'streamCreate'
+})(StreanCreate)
