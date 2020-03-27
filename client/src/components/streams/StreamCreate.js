@@ -2,10 +2,18 @@ import React from "react"
 import {Field, reduxForm} from "redux-form"
 
 class StreanCreate extends React.Component {
+
+    renderInput = (formProps) => {
+        return(
+            <input {...formProps.input}/>
+        )
+    }
+
     render(){
         return(
             <form>
-                <Field />
+                <Field name = "title" component = {this.renderInput}/>
+                <Field name = "description" component = {this.renderInput}/>
             </form>
         )
     }
