@@ -1,11 +1,14 @@
 import React from "react"
 import {Field, reduxForm} from "redux-form"
+import {connect} from "react-redux"
+import {createStream} from "../../actions"
 
 class StreanCreate extends React.Component {
 
     renderInput = (formProps) => {
+        const hasError = `field ${(formProps.meta.error && formProps.meta.touched) ? "error" : ""}`
         return(
-            <div className = "field">
+            <div className = {hasError}>
                 <label>{formProps.text}</label>
                 <input {...formProps.input} autoComplete = "off"/>
                 {this.renderError(formProps.meta)}
@@ -53,7 +56,7 @@ const validate = (formValues) => {
     return error
 }
 
-export default reduxForm({
+const formWrapped = reduxForm({
     form: 'streamCreate',
     validate
 })(StreanCreate)
