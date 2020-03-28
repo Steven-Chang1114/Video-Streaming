@@ -28,6 +28,7 @@ class StreanCreate extends React.Component {
 
     onSubmit = (formValues) => {
         console.log(formValues)
+        this.props.createStream(formValues)
     }
 
     
@@ -60,3 +61,7 @@ const formWrapped = reduxForm({
     form: 'streamCreate',
     validate
 })(StreanCreate)
+
+export default connect(null, {
+    createStream
+})(formWrapped)
