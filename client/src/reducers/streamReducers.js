@@ -10,7 +10,7 @@ import {
 export default (state = {}, action) => {
     switch(action.type){
         case FETCH_STREAMS:
-            return state //{...state, ..._.mapKeys(action.payload,"id")}
+            return {...state, ..._.mapKeys(action.payload,"id")}
         case FETCH_STREAM:
             return state //{ ...state, [action.payload.id]: action.payload} //Why is that even make sense to just return state try later
         case CREATE_STREAM:
