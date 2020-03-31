@@ -2,7 +2,7 @@ import {SIGN_IN, SIGN_OUT} from "../actions/types"
 
 const INIT = {
     isSignedIn: null,
-    id: null
+    userId: null
 }
 
 export default (state = INIT, atcion) => {
