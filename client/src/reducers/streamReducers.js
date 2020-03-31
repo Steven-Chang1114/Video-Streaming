@@ -12,7 +12,7 @@ export default (state = {}, action) => {
         case FETCH_STREAMS:
             return {...state, ..._.mapKeys(action.payload,"id")}
         case FETCH_STREAM:
-            return state //{ ...state, [action.payload.id]: action.payload} //Why is that even make sense to just return state try later
+            return { ...state, [action.payload.id]: action.payload}
         case CREATE_STREAM:
             return { ...state, [action.payload.id]: action.payload}
         case EDIT_STREAM:
