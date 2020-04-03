@@ -1,6 +1,7 @@
 # Video_Streaming
+A twitch-like website that can allow user to create several streams after login, then they can stream the video to the other users by using OBS
 
-# Usage
+## Usage
 ```bash
 git clone https://github.com/Steven-Chang1114/Video_Streaming.git
 cd client
@@ -13,8 +14,7 @@ cd RTMP-server
 npm start
 ```
 
-# Publishing live streams
-## From OBS
+## Publishing live streams (From OBS)
 >Settings -> Stream
 
 Service : Custom..
