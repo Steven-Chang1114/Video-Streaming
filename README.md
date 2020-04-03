@@ -24,4 +24,4 @@ URL : rtmp://localhost/live
 Stream key : id of the stream (You can find the id of the stream in the url: http://localhost:3000/#/streams/{id})
 
 
->Back to the main page -> Start Streaming
+>Start Streaming
