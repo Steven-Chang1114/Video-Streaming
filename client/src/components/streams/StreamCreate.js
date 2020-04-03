@@ -6,7 +6,7 @@ import StreamForm from "./StreamForm"
 class StreanCreate extends React.Component {
 
     onSubmit = (formValues) => {
-        console.log(formValues)
+        //console.log(formValues)
         this.props.createStream(formValues)
     }
 
